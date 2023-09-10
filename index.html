@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form #03</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .Static-Contact > .Header {
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0 0 0;
+        }
+        
+        .email-name{
+            background-color: #f8f8f8c0;
+        }
+        .content,form{
+            background-color: #f8f8f8c0;
+        }
+
+        .content,form > div,h2,input,label,.Fields,textarea{
+            background-color: transparent;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .Static-Contact > div {
+            display: inline-flex;
+        }
+
+        .circle {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            width: 40px;
+            height: 40px;
+            background-color: #64B2D1;
+            border-radius: 50%;
+            font-size: larger;
+        }
+
+        .Static-Contact {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .Icon-with-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 230px;
+            font-size: smaller;
+        }
+
+        span {
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            color: #64B2D1;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .contact-style {
+            margin-left: 50px;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            margin-top: 30px;
+            display: flex;
+        }
+
+       
+        .contact img {
+            float: right; 
+            margin-top: -366px;
+            margin-left: 500px;
+        }
+
+
+        label{
+            font-weight: bold;
+            font-size: 12px;
+            margin-left: 20px;
+        }
+
+        .email-name{
+            display: flex ;
+            margin: 30px;
+        }
+
+        .email{
+            margin-left: 20px;
+        }
+
+        input{
+            margin-top: 5px;
+            margin-left: 20px;
+            width: 170px;
+            padding-bottom: 5px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(151, 151, 151, 0.616);
+        }
+
+        .subject{
+            margin-top: -15px;
+            margin-left: 30px;
+        }
+
+        .subject input{
+            width: 385px;
+        }
+
+        .Message label{
+            margin-left: 1px;
+        }
+
+        .Message{
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+
+        textarea{
+            border: none;
+            outline: none;
+            border-bottom: 1px solid rgba(151, 151, 151, 0.616) ;
+        }
+        
+        
+
+        button{
+            color: white;
+            font-weight: bold;
+            margin-top: 10px;
+            background-color: #71ACCF;
+            border: none;
+            width: 110px;
+            border-radius: 6px;
+            height: 35px;
+            margin-left: 50px;
+        }
+
+        button:hover{
+            background-color: #21b87e;
+            cursor: pointer;
+        }
+
+        button:focus{
+            background-color: #ccb801;
+            cursor: pointer;
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+        .contact img {
+            display: none;
+        }
+
+        input{
+            width: 150px;
+        }
+        .subject input{
+            width: 345px;
+        }
+
+        textarea{
+            width: 345px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1 class="Header">Contact Form #03</h1>
+    <div class="Static-Contact">
+        <div class="Icon-with-text">
+            <i class="fa fa-map-marker icon circle"></i>
+            <p style="color: black;"><span>Address:</span>Awami Villas 6, Phase 8, <br>Bahria Town, Rawalpindi, Pakistan </p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-phone circle"></i>
+            <p><span>Phone: +</span> 3074241757</p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-paper-plane circle"></i>
+            <p><span>Email:</span> tahaamin@gmail.com</p>
+        </div>
+
+        <div class="Icon-with-text">
+            <i class="fa fa-globe circle"></i>
+            <p><span>Website:</span> Website.com</p>
+        </div>
+    </div>
+    <div class="contact">
+        <form action="#">
+            <div class="Dynamic-Contact">
+                <div class="content">
+                    <h2 class="contact-style">Contact Us</h2>
+
+                    <div class="email-name">
+                    <div class="Fields">
+                        <label>Full Name</label><br>
+                        <input type="text" placeholder="Number" required>
+                    </div>
+
+                    <div class="Fields email">
+                        <label class="Fields">Email Address</label><br>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </div>
+
+                    <div class="Fields subject">
+                        <label class="Fields">Subject</label><br>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+
+                    <div class="Fields Message">
+                        <label class="Fields">Message</label><br>
+                        <textarea cols="60" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button class="Button">Send Message</button>
+                </div>
+                <img src="Taha image.png" alt="">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
